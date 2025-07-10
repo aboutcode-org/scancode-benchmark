@@ -14,6 +14,9 @@ VENV=venv
 ACTIVATE?=. ${VENV}/bin/activate;
 
 
+build:
+	docker build --tag scancode-benchmark .
+
 conf:
 	@echo "-> Install dependencies"
 	./configure
